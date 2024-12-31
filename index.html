@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year 2025</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .linear-black {
+            width: 100%;
+            height: 10px;
+            background-color: black;
+            position: relative;
+        }
+
+        .particle-animation {
+            position: absolute;
+            width: 100%;
+            height: 10px;
+            overflow: hidden;
+        }
+
+        .particle {
+            width: 10px;
+            height: 10px;
+            background: green;
+            box-shadow: 0 0 8px green;
+            position: absolute;
+            animation: float 2s infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(100vw);
+                opacity: 0;
+            }
+        }
+
+        .glowing-stroke {
+            width: 100%;
+            height: 5px;
+            border: 2px solid green;
+            box-shadow: 0 0 10px green;
+        }
+
+        #textview {
+            margin: 20px 0;
+            padding: 20px;
+            text-align: center;
+            font-size: 2rem;
+            background-color: #333;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px green;
+        }
+    </style>
+</head>
+<body>
+    <!-- Linear background with black color -->
+    <div class="linear-black">
+        <!-- Particle animation inside -->
+        <div class="particle-animation">
+            <div class="particle" style="top: 0; left: 0;"></div>
+            <div class="particle" style="top: 0; left: 50px;"></div>
+            <div class="particle" style="top: 0; left: 100px;"></div>
+        </div>
+    </div>
+
+    <!-- Linear with glowing green stroke -->
+    <div class="glowing-stroke"></div>
+
+    <!-- TextView with Happy New Year 2025 -->
+    <div id="textview">HAPPY NEW YEAR 2025</div>
+</body>
+</html>
